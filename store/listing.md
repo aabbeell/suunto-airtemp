@@ -88,7 +88,7 @@ Questions and problem reports: borosaabel@gmail.com
 ### Links
 
 - Source code, FAQ and how to add a sensor: [github.com/aabbeell/suunto-airtemp](https://github.com/aabbeell/suunto-airtemp)
-- More SuuntoPlus apps by O. Vitya: [Suuntopo](https://github.com/aabbeell/suuntopo), climbing topos on your wrist, with its [topo editor](https://topo-editor.vercel.app); [VarioLink](https://github.com/aabbeell/suunto-variolink), a paragliding vario display for Bluetooth varios
+- More SuuntoPlus apps by O. Vitya: [Suuntopo](https://github.com/aabbeell/suuntopo), climbing topos on your wrist, with its [topo editor](https://topo-editor.vercel.app); [VarioLink for Suunto](https://github.com/aabbeell/suunto-variolink), a paragliding vario display for Bluetooth varios
 - Developer tools used to build these apps: [suuntoplus-agentic-dev-env](https://github.com/aabbeell/suuntoplus-agentic-dev-env)
 
 AirTemp for Suunto is an independent app. It is not affiliated with or endorsed by Suunto, Xiaomi, SensorPush or Ruuvi; product names are trademarks of their owners.

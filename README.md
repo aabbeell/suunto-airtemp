@@ -68,4 +68,4 @@ Developer notes (architecture, watch limits, adding a sensor): [DEVELOPMENT.md](
 
 - [suuntoplus-agentic-dev-env](https://github.com/aabbeell/suuntoplus-agentic-dev-env): command-line and agent tooling for building, deploying and debugging SuuntoPlus apps
 - [Suuntopo](https://github.com/aabbeell/suuntopo): climbing topos on the watch, with a [browser topo editor](https://topo-editor.vercel.app)
-- [VarioLink](https://github.com/aabbeell/suunto-variolink): paragliding vario display for Bluetooth varios
+- [VarioLink for Suunto](https://github.com/aabbeell/suunto-variolink): paragliding vario display for Bluetooth varios
