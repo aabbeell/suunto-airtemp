@@ -1,0 +1,96 @@
+<!-- ABOUTME: Source of the Suunto AirTemp store banner (upload/1-banner-600x300.png, exactly 600x300), rendered with the SuuntoPlus Editor's headless Chrome. -->
+<!-- ABOUTME: Text left, the app's own simulator screenshot (upload/2-app-image-466.png) right; no third-party logos, product photos or watch photos. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Suunto AirTemp banner</title>
+<style>
+  :root {
+    --bg: #070a0e;
+    --fg: #ffffff;
+    --mid: #9aa4ae;
+    --accent: #33aaff;
+    --ring: #2a3138;
+  }
+  html, body {
+    margin: 0;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .text {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 34px;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+  }
+  .sub {
+    margin: 0 0 16px;
+    font-size: 14px;
+    line-height: 1.35;
+    color: var(--mid);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 10px 2px 0;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .watch {
+    position: absolute;
+    right: 34px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+    border: 10px solid var(--ring);
+    box-shadow: 0 0 0 2px #3b444d, 0 10px 30px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    background: #000;
+  }
+  .watch img {
+    display: block;
+    width: 216px;
+    height: 216px;
+  }
+  .note { font-size: 11px; color: var(--mid, #9aa4ae); margin-top: 10px; }
+</style>
+</head>
+<body>
+  <div class="text">
+    <h1>Suunto AirTemp</h1>
+    <p class="sub">Real air temperature and humidity<br>from a Bluetooth sensor off your wrist.</p>
+    <ul>
+      <li>Big 0.1° reading and trend per hour</li>
+      <li>1-hour graph, exercise min and max</li>
+      <li>Saved to your exercise</li>
+    </ul>
+    <p class="note">Independent app, not affiliated with or endorsed by Suunto.</p>
+  </div>
+  <div class="watch"><img src="upload/2-app-image-466.png" alt=""></div>
+</body>
+</html>

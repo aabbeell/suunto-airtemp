@@ -1,0 +1,59 @@
+Scanning up to 2 minutes; stops 15 s after a Xiaomi-like sensor appears...
+found a candidate after 15 s
+
+all devices with a name:
+A85C8D5D-CBD3-793F-9F27-486F78CF24F0 rssi=-38 names=['LYWSD03MMC'] uuids=[] mfg={} sd={'0000fe95-0000-1000-8000-00805f9b34fb': '30585b050147031c38c1a4280100'}
+
+candidates: [(['LYWSD03MMC'], -38)]
+
+TARGET A85C8D5D-CBD3-793F-9F27-486F78CF24F0 ['LYWSD03MMC'] name bytes: ['4c5957534430334d4d43']
+connected, mtu 23
+service 0000180a-0000-1000-8000-00805f9b34fb
+   char 00002a24-0000-1000-8000-00805f9b34fb ['read'] handle 13
+   char 00002a25-0000-1000-8000-00805f9b34fb ['read'] handle 15
+   char 00002a26-0000-1000-8000-00805f9b34fb ['read'] handle 17
+   char 00002a27-0000-1000-8000-00805f9b34fb ['read'] handle 19
+   char 00002a28-0000-1000-8000-00805f9b34fb ['read'] handle 21
+   char 00002a29-0000-1000-8000-00805f9b34fb ['read'] handle 23
+service 0000180f-0000-1000-8000-00805f9b34fb
+   char 00002a19-0000-1000-8000-00805f9b34fb ['notify', 'read'] handle 26
+service 00010203-0405-0607-0809-0a0b0c0d1912
+   char 00010203-0405-0607-0809-0a0b0c0d2b12 ['write-without-response', 'read'] handle 30
+service ebe0ccb0-7a0a-4b0c-8a1a-6ff2997da3a6
+   char ebe0ccb7-7a0a-4b0c-8a1a-6ff2997da3a6 ['write', 'read'] handle 34
+   char ebe0ccb9-7a0a-4b0c-8a1a-6ff2997da3a6 ['read'] handle 37
+   char ebe0ccba-7a0a-4b0c-8a1a-6ff2997da3a6 ['write', 'read'] handle 40
+   char ebe0ccbb-7a0a-4b0c-8a1a-6ff2997da3a6 ['read'] handle 43
+   char ebe0ccbc-7a0a-4b0c-8a1a-6ff2997da3a6 ['notify'] handle 46
+   char ebe0ccbe-7a0a-4b0c-8a1a-6ff2997da3a6 ['write', 'read'] handle 50
+   char ebe0ccc1-7a0a-4b0c-8a1a-6ff2997da3a6 ['notify', 'read'] handle 53
+   char ebe0ccc4-7a0a-4b0c-8a1a-6ff2997da3a6 ['read'] handle 57
+   char ebe0ccc8-7a0a-4b0c-8a1a-6ff2997da3a6 ['write'] handle 60
+   char ebe0ccd1-7a0a-4b0c-8a1a-6ff2997da3a6 ['write'] handle 63
+   char ebe0ccd7-7a0a-4b0c-8a1a-6ff2997da3a6 ['write', 'read'] handle 66
+   char ebe0ccd8-7a0a-4b0c-8a1a-6ff2997da3a6 ['write'] handle 69
+   char ebe0ccd9-7a0a-4b0c-8a1a-6ff2997da3a6 ['notify', 'write'] handle 72
+   char ebe0cff1-7a0a-4b0c-8a1a-6ff2997da3a6 ['write', 'read'] handle 76
+service 8edffff0-3d1b-9c37-4623-ad7265f14076
+   char 8edffff1-3d1b-9c37-4623-ad7265f14076 ['read'] handle 80
+   char 8edffff3-3d1b-9c37-4623-ad7265f14076 ['notify'] handle 83
+   char 8edffff4-3d1b-9c37-4623-ad7265f14076 ['write', 'read'] handle 87
+   char 8edfffef-3d1b-9c37-4623-ad7265f14076 ['notify', 'read'] handle 90
+service 0000fe95-0000-1000-8000-00805f9b34fb
+   char 00000004-0000-1000-8000-00805f9b34fb ['read'] handle 95
+   char 00000010-0000-1000-8000-00805f9b34fb ['notify', 'write-without-response'] handle 98
+   char 00000017-0000-1000-8000-00805f9b34fb ['notify', 'write'] handle 102
+   char 00000018-0000-1000-8000-00805f9b34fb ['notify', 'write-without-response'] handle 106
+   char 00000019-0000-1000-8000-00805f9b34fb ['notify', 'write-without-response'] handle 110
+service 00000100-0065-6c62-2e74-6f696d2e696d
+   char 00000101-0065-6c62-2e74-6f696d2e696d ['write-without-response'] handle 115
+   char 00000102-0065-6c62-2e74-6f696d2e696d ['notify'] handle 119
+  t=  1.47 ebe0ccc1 len=5 43082e4a0b stock T=21.15 C H=46 % batt=2890 mV
+  t=  7.51 ebe0ccc1 len=5 48082e4a0b stock T=21.20 C H=46 % batt=2890 mV
+  t= 13.51 ebe0ccc1 len=5 4b082e4a0b stock T=21.23 C H=46 % batt=2890 mV
+  t= 19.51 ebe0ccc1 len=5 47082e4a0b stock T=21.19 C H=46 % batt=2890 mV
+  t= 25.51 ebe0ccc1 len=5 47082e4a0b stock T=21.19 C H=46 % batt=2890 mV
+  t= 31.51 ebe0ccc1 len=5 4c082e4a0b stock T=21.24 C H=46 % batt=2890 mV
+  t= 37.56 ebe0ccc1 len=5 4d082e4a0b stock T=21.25 C H=46 % batt=2890 mV
+
+notification counts in 40 s: {'ebe0ccc1': 7}

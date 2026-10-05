@@ -1,0 +1,27 @@
+{
+  "name": "Suunto AirTemp",
+  "version": "1.0",
+  "author": "O. Vitya",
+  "description": "Off-wrist air temp",
+  "type": "device",
+  "usage": "workout",
+  "modificationTime": 1791230414,
+  "template": [
+    { "name": "t.html" }
+  ],
+  "in": [
+    { "name": "units", "source": "/Settings/Unit/UnitsMode", "type": "get" }
+  ],
+  "out": [
+    { "name": "con" },
+    { "name": "airT", "log": true, "shownName": "Air temperature", "format": "Temperature_Fourdigits" },
+    { "name": "rh", "log": true, "shownName": "Air humidity", "format": "Percentage_Fourdigits" },
+    { "name": "gT" }
+  ],
+  "settings": [
+    { "shownName": "Sensor", "path": "sensor", "type": "enum",
+      "values": ["SensorPush HT.w/HTP.xw (beta)", "Auto: Xiaomi or standard sensor", "RuuviTag fw 3.x (beta)", "Standard ESS sensor (beta)"] },
+    { "shownName": "Sensor name (Xiaomi/ESS only)", "path": "name", "type": "string", "maxLength": 15 },
+    { "shownName": "Read interval", "path": "poll", "type": "enum", "values": ["5 s", "10 s", "30 s", "60 s"] }
+  ]
+}

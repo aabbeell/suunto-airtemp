@@ -1,0 +1,42 @@
+<!-- ABOUTME: Suunto AirTemp screen for every round display (n, o, q): humidity or the problem word on top, big air value, 1 h graph, min and max, then the trend or a hint. -->
+<!-- ABOUTME: Static layout only; main.js fills the elements with setText and shows or hides divs with setStyle visibility on '#id' and '#id *', so each one starts with a non-space placeholder. -->
+<uiView>
+  <div id="suuntoplus">
+    <div id="ti" class="sp-b-m p-hc" style="top:calc(12% - 50%e);visibility:hidden;">-- % RH</div>
+    <div id="st" class="sp-t-s sp-c-orange p-hc" style="top:calc(12% - 50%e);">{{stSearch}}</div>
+
+    <div id="tg" class="p-hc sp-text-bottom" style="top:calc(26% - 50%e);visibility:hidden;">
+      <span id="t" class="sp-d-xl f-num">--</span>
+      <span id="u" class="sp-t-s cm-mid" style="padding-left:6px;">{{TXT_CELSIUS}}</span>
+    </div>
+    <div id="gg" class="p-hc sp-text-bottom" style="top:calc(26% - 50%e);">
+      <span id="g" class="sp-d-xl f-num cm-mid">--</span>
+      <span id="v" class="sp-t-s cm-mid" style="padding-left:6px;">{{TXT_CELSIUS}}</span>
+    </div>
+
+    <graph id="gr"
+      style="box-sizing:border-box;top:43%;height:20%;width:72%;left:calc(50% - 50%e);padding:4px;stroke-color:#3AF;stroke:#3AF;stroke-width:4px;fill-color:rgba(51,170,255,0.25);fill:rgba(51,170,255,0.25);"
+      valueFormat="Temperature_Fourdigits"
+      type="line"
+      grid="none"
+      marker="current"
+      inputType="subscribe"
+      input="Zapp/{zapp_index}/Output/gT"
+      windowType="duration"
+      windowSize="3600"
+      sampleFilter="avg"
+      keepAlive="true"
+      slack="0.1"
+      fillReference="-2000" />
+    <div class="cm-fg" style="top:63%;height:2px;width:72%;left:calc(50% - 50%e);opacity:0.4;"></div>
+
+    <div id="mn" class="sp-b-s cm-mid" style="top:calc(70% - 50%e);left:calc(33% - 50%e);">{{min}} --</div>
+    <div id="mx" class="sp-b-s cm-mid" style="top:calc(70% - 50%e);left:calc(67% - 50%e);">{{max}} --</div>
+
+    <div id="tl" class="p-hc sp-vertical-center" style="top:calc(80% - 50%e);visibility:hidden;">
+      <span id="ar" class="sp-b-m" style="padding-right:8px;">-</span>
+      <span id="tr" class="sp-b-m">--</span>
+    </div>
+    <div id="hn" class="sp-b-s cm-mid p-hc" style="top:calc(80% - 50%e);">{{h1}}</div>
+  </div>
+</uiView>
