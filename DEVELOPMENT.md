@@ -1,6 +1,6 @@
 # Developer notes
 
-How Suunto AirTemp is built, what the real watch allows, and how to extend it. Read this before changing `src/air_temperature/`.
+How AirTemp for Suunto is built, what the real watch allows, and how to extend it. Read this before changing `src/air_temperature/`.
 
 ## Tooling
 
@@ -17,10 +17,10 @@ Everything is driven from the command line on a Mac, through [suuntoplus-agentic
 ```bash
 node test/run.js                                        # ~600 checks, must be 0 failures
 node test/variant.js demo /tmp/at-demo demo=0          # simulator build with fake sensor data (demo=0..6 scenarios)
-node test/variant.js debug builds/debug sensor=1        # watch build with the [AT] trace
+node test/variant.js debug builds/watch sensor=1        # watch build with the [AT] trace
 ```
 
-Deploy `builds/debug` only from that folder: the watch assigns the app ID per source folder, and another folder installs a second "Suunto AirTemp".
+Deploy `builds/watch` only from that folder: the watch assigns the app ID per source folder, and another folder installs a second "AirTemp for Suunto".
 
 ## Architecture
 
@@ -42,7 +42,7 @@ Deploy `builds/debug` only from that folder: the watch assigns the app ID per so
 ## Watch limits that shaped the design
 
 - About 24 s after the app loads, the watch's own Searching screen gives up unless `con` is non-zero.
-- With two of these apps in one sport mode, the watch unloads one at exercise start: Suunto AirTemp should be the only SuuntoPlus app in its mode.
+- With two of these apps in one sport mode, the watch unloads one at exercise start: AirTemp for Suunto should be the only SuuntoPlus app in its mode.
 - The JS heap is shared and small. This app runs at about 15.5 KB steady and 22 KB peak; check every change with `test/mem/summary.js`.
 - Settings cannot be edited on a sideloaded app; bake test choices into `data.json` (`variant.js … sensor=N`).
 

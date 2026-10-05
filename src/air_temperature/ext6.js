@@ -1,4 +1,4 @@
-// ABOUTME: Load-time helper for Suunto AirTemp: reads the settings (localStorage is passed in), clears the trend ring, drops prototypes.
+// ABOUTME: Load-time helper for AirTemp for Suunto: reads the settings (localStorage is passed in), clears the trend ring, drops prototypes.
 // ABOUTME: main.js evaluates it once in onLoad and keeps the returned object as G; main.js parses a non-empty sensor name (G.m) with ext14.js.
 function (ls, ring, f1, f2, f3, f4, f5, f6, f7, f8) {
   // sensor and poll: 0-3, the default is the index (sensor 0 SensorPush, poll 1 = 10 s). No helper closure, so nothing of

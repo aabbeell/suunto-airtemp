@@ -1,4 +1,4 @@
-// ABOUTME: Suunto AirTemp, a SuuntoPlus device app that shows air temperature and humidity from an off-wrist BLE sensor.
+// ABOUTME: AirTemp for Suunto, a SuuntoPlus device app that shows air temperature and humidity from an off-wrist BLE sensor.
 // ABOUTME: Hot path (BLE events, sample checks, polling, stats, trend, screen) plus the tick-1 connect; profiles ext1-4.js, cold code ext6-15.js.
 
 // st (link state): 0 INIT, 1 LINK (waiting for 100), 2 SETUP (ext13.js registers on the first link, then ext7.js), 4 RUN,

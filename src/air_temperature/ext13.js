@@ -1,4 +1,4 @@
-// ABOUTME: Registration for Suunto AirTemp, loaded on event 100 until every candidate is registered (first link, or resumed after a drop).
+// ABOUTME: Registration for AirTemp for Suunto, loaded on event 100 until every candidate is registered (first link, or resumed after a drop).
 // ABOUTME: Takes the profile's table function (main.js loads ext9-12.js: an ext file cannot evalFile on the watch), registers one candidate per tick; returns 0 busy, 3 registered (main.js then loads ext7.js), 2 unusable.
 function (prof, rc, call, T) {
   // Registration resumes at prof.rg after a link drop, so no id is ever registered twice (registration is local and outlives

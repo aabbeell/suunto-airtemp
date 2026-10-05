@@ -1,7 +1,7 @@
-<!-- ABOUTME: Hardware test record for Suunto AirTemp: one row per SPEC §17c step, filled in on the user's Race S with a real sensor. -->
+<!-- ABOUTME: Hardware test record for AirTemp for Suunto: one row per SPEC §17c step, filled in on the user's Race S with a real sensor. -->
 <!-- ABOUTME: Empty until the tests run; the store listing's "Tested on" sentence may only cite rows marked pass here. -->
 
-# Suunto AirTemp: hardware results
+# AirTemp for Suunto: hardware results
 
 ## Recorded runs
 

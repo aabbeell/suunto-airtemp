@@ -1,4 +1,4 @@
-// ABOUTME: Sensor profile 0 for Suunto AirTemp: SensorPush HT.w / HTP.xw (2nd gen), polled by a 4-byte write then a read.
+// ABOUTME: Sensor profile 0 for AirTemp for Suunto: SensorPush HT.w / HTP.xw (2nd gen), polled by a 4-byte write then a read.
 // ABOUTME: Resident part (main.js keeps it): timing, poll payloads, setup state and the parser; UUIDs and connect params are in ext9.js.
 function () {
   // The parser's prototype object is dropped (a function and its prototype reference each other).

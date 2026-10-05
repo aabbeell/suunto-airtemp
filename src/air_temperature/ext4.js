@@ -1,4 +1,4 @@
-// ABOUTME: Sensor profile 3 for Suunto AirTemp: any sensor exposing the Bluetooth Environmental Sensing Service (0x181A).
+// ABOUTME: Sensor profile 3 for AirTemp for Suunto: any sensor exposing the Bluetooth Environmental Sensing Service (0x181A).
 // ABOUTME: Resident part (main.js keeps it): timing, setup state and the parser; UUIDs and connect params are in ext12.js.
 function () {
   // The parser's prototype object is dropped (a function and its prototype reference each other).

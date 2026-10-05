@@ -1,4 +1,4 @@
-// ABOUTME: Sensor profile 2 for Suunto AirTemp: RuuviTag fw 3.x, data format 5 heartbeat over Nordic UART (NUS) TX notifications.
+// ABOUTME: Sensor profile 2 for AirTemp for Suunto: RuuviTag fw 3.x, data format 5 heartbeat over Nordic UART (NUS) TX notifications.
 // ABOUTME: Resident part (main.js keeps it): timing, setup state and the parser; UUIDs and connect params are in ext11.js.
 function () {
   // The parser's prototype object is dropped (a function and its prototype reference each other).

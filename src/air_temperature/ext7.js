@@ -1,4 +1,4 @@
-// ABOUTME: Connection setup for Suunto AirTemp, loaded on every event 100 once registration is done (ext13.js): enable, battery, LED.
+// ABOUTME: Connection setup for AirTemp for Suunto, loaded on every event 100 once registration is done (ext13.js): enable, battery, LED.
 // ABOUTME: Returns a stepper main.js calls once per tick with the last call's result (0 none, 1 ok, 2 refused, 3 threw or timed out): 0 busy, 1 done.
 function (prof, rc, call) {
   // Phases 1-3 walk rc (characteristic id -> role) in id order, which is each profile's preference order. The stepper is

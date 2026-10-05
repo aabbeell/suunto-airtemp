@@ -1,4 +1,4 @@
-// ABOUTME: Sensor profile 1 for Suunto AirTemp (Auto): Xiaomi LYWSD03MMC stock firmware (ebe0ccc1 frame), or any sensor with ESS characteristics (pvvx/ATC, standard sensors).
+// ABOUTME: Sensor profile 1 for AirTemp for Suunto (Auto): Xiaomi LYWSD03MMC stock firmware (ebe0ccc1 frame), or any sensor with ESS characteristics (pvvx/ATC, standard sensors).
 // ABOUTME: Resident part (main.js keeps it): timing, setup state and the parser; UUIDs and connect params are in ext10.js.
 function () {
   // The parser's prototype object is dropped (a function and its prototype reference each other).

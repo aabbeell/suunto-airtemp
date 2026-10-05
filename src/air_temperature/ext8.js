@@ -1,4 +1,4 @@
-// ABOUTME: Exercise summary for Suunto AirTemp: min / average / max air temperature (kelvin, shown in the user's unit) and humidity.
+// ABOUTME: Exercise summary for AirTemp for Suunto: min / average / max air temperature (kelvin, shown in the user's unit) and humidity.
 // ABOUTME: main.js evaluates it once from getSummaryOutputs. Names are tokens here: the watch build translates ext files, the simulator shows them raw.
 function (mn, avg, mx, rh) {
   var f = 'Temperature_Fourdigits', r = [

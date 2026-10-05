@@ -1,11 +1,11 @@
 {
-  "name": "Suunto AirTemp",
+  "name": "AirTemp for Suunto",
   "version": "1.0",
   "author": "O. Vitya",
   "description": "Off-wrist air temp",
   "type": "device",
   "usage": "workout",
-  "modificationTime": 1791230414,
+  "modificationTime": 1791231767,
   "template": [
     { "name": "t.html" }
   ],

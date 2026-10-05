@@ -1,4 +1,4 @@
-// ABOUTME: Sensor-name override for Suunto AirTemp: trimmed, 1-15 printable ASCII characters, as complete (AD 9) and short (AD 8) name.
+// ABOUTME: Sensor-name override for AirTemp for Suunto: trimmed, 1-15 printable ASCII characters, as complete (AD 9) and short (AD 8) name.
 // ABOUTME: main.js loads it once in onLoad, only when the name setting is non-empty; it writes G.a, G.b and G.x.
 function (r, name) {
   var i = 0, c = name.length, n, k, a = [9], b = [8];

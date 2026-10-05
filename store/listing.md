@@ -1,7 +1,7 @@
-<!-- ABOUTME: Store listing for Suunto AirTemp v1.0 (screen v3, SPEC §22.18): the API Zone form map, store description, release notes, FAQ and the upload package. -->
+<!-- ABOUTME: Store listing for AirTemp for Suunto v1.0 (screen v3, SPEC §22.18): the API Zone form map, store description, release notes, FAQ and the upload package. -->
 <!-- ABOUTME: Upload-ready files are in store/upload/; the description is pasted into the signed-in API Zone SuuntoPlus console by the owner. -->
 
-# Suunto AirTemp: store listing (v1.0)
+# AirTemp for Suunto: store listing (v1.0)
 
 Prepared 2026-10-05 for the API Zone form "Add new SuuntoPlus app" (playbook: the `suuntoplus-store-submission` skill, §2-3). This replaces the earlier draft, which described the old screen (WRIST row, SensorPush as the main sensor, Xiaomi experimental). The current app is the one in SPEC §22.18.
 
@@ -9,7 +9,7 @@ Prepared 2026-10-05 for the API Zone form "Add new SuuntoPlus app" (playbook: th
 
 | Form field | Value | File / source |
 |---|---|---|
-| App name (no form field; taken from the manifest) | Suunto AirTemp | `manifest.json` `name` (14 of 60 bytes); contains "Suunto", so the description and banner must say the app is independent |
+| App name (no form field; taken from the manifest) | AirTemp for Suunto | `manifest.json` `name` (18 of 60 bytes; app ID airtem..); contains "Suunto", so the description and banner must say the app is independent |
 | Banner image (PNG, exactly 600 × 300) | Text left, app screen right | `upload/1-banner-600x300.png` (source `banner-600.html`) |
 | Description (Markdown) | The "Store description" section below, pasted as is | this file |
 | Categories (max 3) | **Outdoor**, **Training Tools** | see "Categories" |
@@ -31,7 +31,7 @@ Paste everything between the two rules into the Description field.
 
 ---
 
-**Suunto AirTemp** (an independent app, not made by or affiliated with Suunto) shows the real air temperature and humidity from a Bluetooth sensor you carry away from your body. The watch's own temperature sensor sits against your wrist and reads warmer than the air.
+**AirTemp for Suunto** (an independent app, not made by or affiliated with Suunto) shows the real air temperature and humidity from a Bluetooth sensor you carry away from your body. The watch's own temperature sensor sits against your wrist and reads warmer than the air.
 
 ### On the screen
 
@@ -65,14 +65,14 @@ Tested on the Suunto Race S. Built for the round-display watches with the curren
 ### Setup
 
 1. In the Suunto app, open the app's settings and choose your sensor under "Sensor".
-2. Add Suunto AirTemp to a sport mode as the **only** SuuntoPlus app in that mode.
+2. Add AirTemp for Suunto to a sport mode as the **only** SuuntoPlus app in that mode.
 3. Close the sensor's own phone app (force-quit it): the sensor accepts only one connection.
 4. Hang the sensor in shade with airflow, away from your body, for example on the outside of your pack.
 5. Start the sport mode and wait for the app to connect.
 
 ### Limits
 
-- Suunto AirTemp must be the only SuuntoPlus app in its sport mode; with a second app the watch can run out of memory and unload one of them.
+- AirTemp for Suunto must be the only SuuntoPlus app in its sport mode; with a second app the watch can run out of memory and unload one of them.
 - The sensor accepts one connection at a time, so close its phone app and any gateway.
 - Not supported: broadcast-only hygrometers (Govee, ThermoBeacon, Inkbird and similar), Shelly BLU, Garmin Tempe and the 1st-generation SensorPush HT1.
 - English only.
@@ -91,7 +91,7 @@ Questions and problem reports: borosaabel@gmail.com
 - More SuuntoPlus apps by O. Vitya: [Suuntopo](https://github.com/aabbeell/suuntopo), climbing topos on your wrist, with its [topo editor](https://topo-editor.vercel.app); [VarioLink](https://github.com/aabbeell/suunto-variolink), a paragliding vario display for Bluetooth varios
 - Developer tools used to build these apps: [suuntoplus-agentic-dev-env](https://github.com/aabbeell/suuntoplus-agentic-dev-env)
 
-Suunto AirTemp is an independent app. It is not affiliated with or endorsed by Suunto, Xiaomi, SensorPush or Ruuvi; product names are trademarks of their owners.
+AirTemp for Suunto is an independent app. It is not affiliated with or endorsed by Suunto, Xiaomi, SensorPush or Ruuvi; product names are trademarks of their owners.
 
 ---
 
@@ -130,7 +130,7 @@ The watch could not start the Bluetooth connection, for example because too many
 The sensor reports a low battery. Readings continue; replace its battery soon.
 
 **The app stops or disappears when the exercise starts.**
-Make sure Suunto AirTemp is the only SuuntoPlus app in that sport mode.
+Make sure AirTemp for Suunto is the only SuuntoPlus app in that sport mode.
 
 **Why not Govee, Shelly BLU or Garmin Tempe?**
 Govee, ThermoBeacon, Inkbird and similar hygrometers only broadcast and accept no connection. Shelly BLU needs Bluetooth bonding. Garmin Tempe uses ANT+. The 1st-generation SensorPush HT1 is not supported either.
@@ -161,7 +161,7 @@ No Suunto, Xiaomi, SensorPush or Ruuvi logos, product photos or watch photos. Re
 node -e "require('$HOME/.vscode/extensions/suunto.suuntoplus-editor-1.42.0/node_modules/@suunto-internal/suuntoplus-tools/lib/source-package.js').createSourcePackage('/tmp/at-pkg', '<repo>/store/upload/3-package-airtem-source-v1.0.zip')"
 ```
 
-- **`modificationTime` in the package: 1791230414** (2026-10-05). `src/air_temperature/manifest.json` still has 1791068180; **set it to 1791230414 before submitting** so the repo matches the uploaded package (owner / main thread). A rebuilt package needs a new value again.
+- **`modificationTime` in the package: 1791231767** (2026-10-05). `src/air_temperature/manifest.json` still has 1791068180; **set it to 1791231767 before submitting** so the repo matches the uploaded package (owner / main thread). A rebuilt package needs a new value again.
 - `data.json` in the package: `sensor` "1" (Auto), `name` "", `poll` "1"; no demo or debug keys.
 
 `unzip -l` of the package:
@@ -194,7 +194,7 @@ node -e "require('$HOME/.vscode/extensions/suunto.suuntoplus-editor-1.42.0/node_
 
 ## Before submitting
 
-1. Done: `modificationTime` in `src/air_temperature/manifest.json` is 1791230414, the same as the package.
+1. Done: `modificationTime` in `src/air_temperature/manifest.json` is 1791231767, the same as the package.
 2. Done: the 2026-10-04 Race S run is recorded in `docs/HW-RESULTS.md`. Still open: one watch run of screen v3 (graph) and Auto before submitting.
 2b. The GitHub links in the description only work once those repos are public.
 3. The upload itself (three files, description, categories, role, external device "Yes", licence) is the owner's action in the API Zone console.

@@ -1,12 +1,12 @@
-# Suunto AirTemp
+# AirTemp for Suunto
 
-![Suunto AirTemp banner](store/upload/1-banner-600x300.png)
+![AirTemp for Suunto banner](store/upload/1-banner-600x300.png)
 
 _Independent app, not affiliated with or endorsed by Suunto._
 
 SuuntoPlus sports app that shows the **real air temperature and humidity** from a Bluetooth sensor you carry away from your body. The watch's own temperature sensor sits against your wrist and reads several degrees too warm; a small sensor on the outside of your pack does not.
 
-**Status (2026-10-05):** runs on a Suunto Race S (fw 2.53.42) with a Xiaomi LYWSD03MMC (stock firmware): connects, shows live values and logs them. The redesigned screen (v3, with the 1 h graph) and the Auto sensor option are built and tested in the simulator; their watch run is next. Not yet in the SuuntoPlus store. Suunto AirTemp is an independent app, not affiliated with or endorsed by Suunto.
+**Status (2026-10-05):** runs on a Suunto Race S (fw 2.53.42) with a Xiaomi LYWSD03MMC (stock firmware): connects, shows live values and logs them. The redesigned screen (v3, with the 1 h graph) and the Auto sensor option are built and tested in the simulator; their watch run is next. Not yet in the SuuntoPlus store. AirTemp for Suunto is an independent app, not affiliated with or endorsed by Suunto.
 
 **Author:** O. Vitya
 
@@ -57,10 +57,10 @@ Tooling (build, deploy bridge, simulator screenshots, watch log, memory tool) is
 
 ```bash
 node test/run.js
-node test/variant.js debug builds/debug sensor=1
+node test/variant.js debug builds/watch sensor=1
 ```
 
-Deploy `builds/debug` through the bridge (`deploy` tool). Always deploy from that same folder: the watch assigns the app ID per source folder, so another folder installs a second copy.
+Deploy `builds/watch` through the bridge (`deploy` tool). Always deploy from that same folder: the watch assigns the app ID per source folder, so another folder installs a second copy.
 
 Developer notes (architecture, watch limits, adding a sensor): [DEVELOPMENT.md](DEVELOPMENT.md).
 

@@ -1,4 +1,4 @@
-// ABOUTME: Read-fallback rotation for Suunto AirTemp (notify profiles): after a failed read, try the next registered id of that kind.
+// ABOUTME: Read-fallback rotation for AirTemp for Suunto (notify profiles): after a failed read, try the next registered id of that kind.
 // ABOUTME: main.js loads it on the first failed fallback read of a notify profile and keeps it as prof.r; at most 15 steps, wrapping back to the same id.
 function (prof, rc, hu) {
   var j, v, n = hu ? prof.h : prof.t;

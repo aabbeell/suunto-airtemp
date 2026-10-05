@@ -9,5 +9,5 @@ src/**/*.zip
 
 # Packaged VS Code extensions
 *.vsix
-builds/debug/
+builds/watch/
 __pycache__/
