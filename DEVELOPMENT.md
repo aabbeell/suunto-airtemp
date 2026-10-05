@@ -52,4 +52,4 @@ Full detail and history: `docs/SPEC.md` (§22.18 for the current, hardware-prove
 
 - [suuntoplus-agentic-dev-env](https://github.com/aabbeell/suuntoplus-agentic-dev-env): the build, deploy, simulator, memory and watch-log tooling these apps use
 - [Suuntopo](https://github.com/aabbeell/suuntopo) with its [browser topo editor](https://topo-editor.vercel.app): climbing topos on the watch
-- [VarioLink](https://github.com/aabbeell/suuntoplus-sensors): paragliding vario display for Bluetooth varios
+- [VarioLink](https://github.com/aabbeell/suunto-variolink): paragliding vario display for Bluetooth varios
